@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+# E/F : erreurs pycodestyle/pyflakes · I : tri des imports
+# UP : syntaxe Python moderne · B : bugs probables (flake8-bugbear)
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra --cov=app --cov-report=term-missing --cov-fail-under=80"
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "if __name__ == .__main__.:"]

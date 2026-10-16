@@ -1,0 +1,20 @@
+# Environnements et caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Rapports de test
+.coverage
+coverage.xml
+htmlcov/
+
+# Artefacts générés (le modèle est reconstruit par scripts/train.py)
+models/
+
+# Secrets et éditeurs
+.env
+.env.*
+.idea/
+.vscode/
