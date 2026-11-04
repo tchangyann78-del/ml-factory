@@ -1,0 +1,33 @@
+# Contrôle de version et CI
+.git
+.gitignore
+.github
+
+# Environnements et caches Python
+.venv
+venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Rapports et artefacts locaux (le modèle est ré-entraîné dans l'image)
+.coverage
+coverage.xml
+htmlcov/
+models/
+
+# Tests, docs, outillage de dev : inutiles à l'exécution
+tests/
+*.md
+requirements-dev.txt
+
+# Secrets et configuration locale
+.env
+.env.*
+
+# Éditeurs et Docker lui-même
+.vscode/
+.idea/
+Dockerfile*
+.dockerignore
